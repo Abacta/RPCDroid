@@ -11,6 +11,9 @@ Edit the `config.json` where:
 - `app_id`: required, it searches the app you want to set.
 - `app_custom_details`: allows you to insert a custom text (the "state" of the presence), don't worry, you can set it as empty if you don't want.
 
+### Supported Apps:
+The file `applications.json` has some special applications where it sets automatically the app name (the app_id in `config.json`) to their respective Play Store ID, if you want to add more apps, feel free to edit the file.
+
 ### Installation
  If you have node installed:
 ```sh
