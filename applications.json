@@ -1,0 +1,196 @@
+{
+    "apps": [
+        {
+            "name": "8ball pool",
+            "id": "com.miniclip.eightballpool"
+        },
+        {
+            "name": "among us",
+            "id": "com.innersloth.spacemafia"
+        },
+        {
+            "name": "banana kong",
+            "id": "com.fdgentertainment.bananakong"
+        },
+        {
+            "name": "blockman go",
+            "id": "com.app.blockmango"
+        },
+        {
+            "name": "bloons td 6",
+            "id": "com.ninjakiwi.bloonstd6"
+        },
+        {
+            "name": "brawl stars",
+            "id": "com.supercell.brawlstars"
+        },
+        {
+            "name": "candy crush saga",
+            "id": "com.king.candycrushsaga"
+        },
+        {
+            "name": "clash royale",
+            "id": "com.supercell.clashroyale"
+        },
+        {
+            "name": "clash of clans",
+            "id": "com.supercell.clashofclans"
+        },
+        {
+            "name": "cod mobile",
+            "id": "com.activision.callofduty.shooter"
+        },
+        {
+            "name": "coin master",
+            "id": "com.moonactive.coinmaster"
+        },
+        {
+            "name": "critical strike online",
+            "id": "com.critical.strike2"
+        },
+        {
+            "name": "dan the man",
+            "id": "com.halfbrick.dantheman"
+        },
+        {
+            "name": "farm heroes saga",
+            "id": "com.king.farmheroessaga"
+        },
+        {
+            "name": "forager",
+            "id": "com.humblebundle.forager"
+        },
+        {
+            "name": "free fire max",
+            "id": "com.dts.freefiremax"
+        },
+        {
+            "name": "free fire ilumina",
+            "id": "com.dts.freefireth"
+        },
+        {
+            "name": "gangstar vegas",
+            "id": "com.gameloft.android.ANMP.GloftGGHM"
+        },
+        {
+            "name": "gangstar new orelans",
+            "id": "com.gameloft.android.ANMP.GloftOLHM"
+        },
+        {
+            "name": "granny",
+            "id": "com.dvloper.granny"
+        },
+        {
+            "name": "grand theft auto vice city",
+            "id": "com.rockstargames.gtavc"
+        },
+        {
+            "name": "grand theft auto san andreas",
+            "id": "com.rockstargames.gtasa"
+        },
+        {
+            "name": "grand theft auto 3",
+            "id": "com.rockstar.gta3"
+        },
+        {
+            "name": "grand theft auto liberty city stories",
+            "id": "com.rockstargames.gtalcs"
+        },
+        {
+            "name": "grand theft auto chinatown wars",
+            "id": "com.rockstargames.gtactw"
+        },
+        {
+            "name": "hill climb racing",
+            "id": "com.fingersoft.hillclimb"
+        },
+        {
+            "name": "lords mobile",
+            "id": "com.igg.android.lordsmobile"
+        },
+        {
+            "name": "ludo club",
+            "id": "com.moonfrog.ludo.club"
+        },
+        {
+            "name": "minecraft",
+            "id": "com.mojang.minecraftpe"
+        },
+        {
+            "name": "pokemon go",
+            "id": "com.nianticlabs.pokemongo"
+        },
+        {
+            "name": "pou",
+            "id": "me.pou.app"
+        },
+        {
+            "name": "pk xd",
+            "id": "com.movile.playkids.pkxd"
+        },
+        {
+            "name": "roblox",
+            "id": "com.roblox.client"
+        },
+        {
+            "name": "slay the spire",
+            "id": "com.humble.SlayTheSpire"
+        },
+        {
+            "name": "slither.io",
+            "id": "air.com.hypah.io.slither"
+        },
+        {
+            "name": "sonic dash",
+            "id": "com.sega.sonicdash"
+        },
+        {
+            "name": "subway surfers",
+            "id": "com.kiloo.subwaysurf"
+        },
+        {
+            "name": "super auto pets",
+            "id": "com.teamwood.spacewood.unity"
+        },
+        {
+            "name": "stumble guys",
+            "id": "com.kitkagames.fallbuddies"
+        },
+        {
+            "name": "suspects mystery mansion",
+            "id": "com.wildlifestudios.free.online.games.suspects"
+        },
+        {
+            "name": "talking tom gold rush",
+            "id": "com.outfit7.talkingtomgoldrun"
+        },
+        {
+            "name": "talking tom hero dash",
+            "id": "com.outfit7.herodash"
+        },
+        {
+            "name": "temple run",
+            "id": "com.imangi.templerun"
+        },
+        {
+            "name": "tomb of the mask",
+            "id": "com.playgendary.tom"
+        },
+        {
+            "name": "vector",
+            "id": "com.nekki.vector"
+        },
+        {
+            "name": "yet another pixel dungeon",
+            "id": "com.consideredhamster.yetanotherpixeldungeon"
+        },
+        {
+            "name": "yugioh master duel",
+            "id": "jp.konami.masterduel"
+        },
+        {
+            "name": "zombie tsunami",
+            "id": "net.mobigame.zombietsunami"
+        }
+    ]
+}
