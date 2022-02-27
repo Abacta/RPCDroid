@@ -32,5 +32,5 @@ cd RPCDroid
 Linux: 
 ```sh
 cd RPCDroid
-.\start.sh
+./start.sh
 ```
