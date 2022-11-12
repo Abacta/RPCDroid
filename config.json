@@ -1,4 +1,5 @@
 {
-  "app_id": "",
-  "app_custom_details": ""
+  "app_name": "app name here!",
+  "app_custom_details": "",
+  "set_alt_name": false
 }

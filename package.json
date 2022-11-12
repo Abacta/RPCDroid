@@ -1,17 +1,17 @@
 {
-  "name": "rpcdroid",
+  "name": "rpcm",
   "version": "1.0.0",
-  "description": "displays a play store app as your discord rpc",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js"
   },
-  "author": "abacta",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
+    "app-store-scraper": "^0.17.0",
     "discord-rich-presence": "^0.0.8",
-    "google-play-scraper": "^8.1.0",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.19"
   }
 }

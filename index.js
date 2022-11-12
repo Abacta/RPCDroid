@@ -1,68 +1,58 @@
-/*
-    INITIAL SETUP => Get first variables from config.json
-*/
+const user = require("./config");
+const store = require("app-store-scraper");
 
-const custom_app = require("./config");
-const supported_app = require("./applications");
-const mobile_app = require("google-play-scraper");
+var application_id;
+var application_name;
 
-function toFilter() {
-  const toSearch_name = supported_app.apps.filter(
-    (item) => item.name == custom_app.app_id
-  );
-  try {
-    if (toSearch_name.length == 0) {
-      const toSearch_id = supported_app.apps.filter(
-        (item) => item.id == custom_app.app_id
-      );
-      return toSearch_id[0].id;
-    } else {
-      return toSearch_name[0].id;
-    }
-  } catch {
-    return custom_app.app_id;
+function check() {
+  let discord_app_id = user.set_alt_name;
+  let to_search_name = user.app_name;
+
+  switch (discord_app_id) {
+    case true:
+      application_id = "957767689072422933";
+    case false:
+      application_id = "944685665243762728";
+  }
+
+  switch ((to_search_name.length == 0)) {
+    case true:
+      application_name = "";
+    case false:
+      application_name = user.app_name;
   }
 }
 
-if (toFilter().length == 0) {
-  console.log("[INFO] app_id needs a name!\n[EXIT] Press Ctrl + C, then run the script again!");
-  return;
-}
+check();
 
-/*
-    SEND THE DESIRED ID => Start RPC, this prevents unecessary starts and frequent RPC_CONNECTION_TIMEOUT
-*/
+const client = require("discord-rich-presence")(application_id);
 
-const client = require("discord-rich-presence")("944685665243762728");
-mobile_app
-  .app({ appId: toFilter() })
+store
+  .search({ term: application_name, num: 1 })
   .then((result) => {
-    if (custom_app.app_custom_details.length < 2) {
+    const app_name = result[0].title;
+    const app_icon = result[0].icon;
+
+    if (user.app_custom_details.length < 2) {
       client.updatePresence({
-        details: result.title,
+        details: app_name,
         startTimestamp: Date.now(),
-        largeImageKey: result.icon,
+        largeImageKey: app_icon,
         instance: true,
       });
-    } else if (custom_app.app_custom_details.length < 128) {
+    } else if (user.app_custom_details.length < 128) {
       client.updatePresence({
-        details: result.title,
-        state: custom_app.app_custom_details,
+        details: app_name,
+        state: user.app_custom_details,
         startTimestamp: Date.now(),
-        largeImageKey: result.icon,
+        largeImageKey: app_icon,
         instance: true,
       });
-    } else {
-      console.log(
-        "[INFO] app_custom_details text must be less than 128 characters long!\n[EXIT] Press Ctrl + C, then run the script again!"
-      );
-      return;
     }
   })
-  .catch((app_error) => {
-    console.log("[ERROR] ", app_error + "\n[EXIT] Press Ctrl + C, then run the script again!");
+  .catch((error) => {
+    console.log("\n[ERROR] " + error.stack);
+    console.log(
+      '\n[INFO] If the error is "term is required", make sure app_name have something inserted\n[INFO] If the error is "rpc connection timeout", restart your discord client via ctrl + r'
+    );
   });
-
-console.log(
-  "[INFO] Application " + custom_app.app_id + " selected with success!\n[EXIT] Press Ctrl + C, then run the script again!"
-);
