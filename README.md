@@ -11,7 +11,7 @@ Due to problems with the `google-play-scraper`, the library got replaced in favo
 ### How to use:
 Edit the `config.json` where:
 - `app_name`: required, it searches the app you want to set.
-- `app_custom_details`: allows you to insert a custom text (the "state" of the presence), don't worry, you can set it as empty if you don't want.
+- `app_custom_details`: allows you to insert a custom text (the "state" of the presence), don't worry, you can set it as empty if you want.
 - `set_alt_name`: changes the "playing x" with either RPCDroid or Android.
 
 ### Installation
